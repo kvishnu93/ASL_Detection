@@ -84,7 +84,7 @@ def predict():
                         same_characters += predicted_character
                         count += 1
 
-                    if count == 30:  # Confirm character after 30 consecutive detections
+                    if count == 5:  # Confirm character after 5 consecutive detections
                         if predicted_character.lower() == "del":  # Back Space
                             if final_characters:
                                 final_characters = final_characters[:-1]
